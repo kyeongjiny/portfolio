@@ -1,0 +1,12 @@
+@charset "utf-8";
+$a-tags: 'a, a:active, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+$cbase: #333;
+$mq-breakpoints: (
+		ms : 375px,
+		m:  480px,
+		wm : 640px,
+		t:  768px,
+		lt : 1080px,
+		pc: 1280px
+) !default;

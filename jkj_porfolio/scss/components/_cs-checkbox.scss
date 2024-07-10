@@ -1,0 +1,111 @@
+.agreeParagraph{
+	@include clearfix;
+}
+.chk_wrapper {
+	position: relative;
+    display: inline-block;
+}
+/*style label to give some more space*/
+.chk_wrapper label {
+  display: block;
+  padding-left:24px;
+}
+/*style and hide original checkbox*/
+.chk_wrapper input {
+	position: absolute;
+	left: 0;
+	top: 2px;
+	width: 16px;
+	height: 16px;
+	opacity: 0;
+}
+/*position new box*/
+.chk_wrapper input + label::before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #858585;
+}
+/*svg background styles*/
+.chk_wrapper input + label::after {
+	content: "";
+	position: absolute;
+	top: 6px;
+	left: 3px;
+	display: block;
+	opacity: 0;
+	width: 11px;
+	height: 11px;
+	background: url('resources/images/common/checked.png')no-repeat;
+}
+
+/*reveal check for 'on' state*/
+.chk_wrapper input:checked + label::after {
+  opacity: 1;
+}
+/*focus styles*/
+.chk_wrapper input:focus + label::before {
+  box-shadow: 0 0 0 2px #000;  
+outline: 2px solid transparent; /* For Windows high contrast mode. */
+}
+
+
+
+.radio_wrapper {
+	position: relative;
+    display: inline-block;
+}
+
+/*style label to give some more space*/
+.radio_wrapper label {
+  display: block;
+  padding-left:24px;
+}
+
+/*style and hide original checkbox*/
+.radio_wrapper input {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 16px;
+	height:16px;
+	opacity: 0;
+}
+
+/*position new box*/
+.radio_wrapper input + label::before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #858585;
+	border-radius: 50%;
+}
+
+/*radio pseudo element styles*/
+.radio_wrapper input + label::after {
+  content: "";
+  opacity: 0;
+  border: 4px solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 7px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/*reveal check for 'on' state*/
+.radio_wrapper input:checked + label::after {
+  opacity: 1;
+}
+
+/*focus styles*/
+.radio_wrapper input:focus + label::before {
+  box-shadow: 0 0 0 3px #ffbf47;  
+outline: 3px solid transparent; /* For Windows high contrast mode. */
+}

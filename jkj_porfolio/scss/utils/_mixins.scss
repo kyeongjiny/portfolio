@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+@mixin clearfix {
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin clearafter {
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin linx($link, $visit, $hover, $active) {
+    a {
+        color: $link;
+
+        &:visited {
+            color: $visit;
+        }
+
+        &:hover {
+            color: $hover;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+}
+
+@mixin text-ellipsis {
+    display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    visibility: visible;
+}
+
+@mixin multiline-ellipsis ($max-height, $lines: 2) {
+  // Fallback for non-webkit browsers.
+  // Fallback does not render ellipsis.
+  overflow: hidden;
+  max-height: $max-height;
+  text-overflow: ellipsis;
+  // Webkit solution for multiline ellipsis
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;  
+  visibility: visible;
+  // Solution for Opera
+  text-overflow: -o-ellipsis-lastline;
+}
+
+// rem fontsize
+@mixin font-size($sizeValue: 1.6) {
+    font-size: ($sizeValue * 10) + px;
+    font-size: $sizeValue + rem;
+}
+
+// styleguide:ignore:start
+// rem size
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+}
+
+@mixin rem-fallback($property, $values...) {
+    $max: length($values);
+    $pxValues: '';
+    $remValues: '';
+
+    @for $i from 1 through $max {
+        $value: strip-unit(nth($values, $i));
+        $pxValues: #{$pxValues + $value*16}px;
+
+        @if $i < $max {
+            $pxValues: #{$pxValues + " "};
+        }
+    }
+
+    @for $i from 1 through $max {
+        $value: strip-unit(nth($values, $i));
+        $remValues: #{$remValues + $value}rem;
+
+        @if $i < $max {
+            $remValues: #{$remValues + " "};
+        }
+    }
+
+    #{$property}: $pxValues;
+    #{$property}: $remValues;
+}
+
+/// Mixin to prefix several properties at once
+/// @author Hugo Giraudel
+/// @param {Map} $declarations - Declarations to prefix
+/// @param {List} $prefixes (()) - List of prefixes to print
+@mixin prefix($declarations, $prefixes: ()) {
+
+    @each $property,
+    $value in $declarations {
+        @each $prefix in $prefixes {
+            #{'-' + $prefix + '-' + $property}: $value;
+        }
+
+        // Output standard non-prefixed declaration
+        #{$property}: $value;
+    }
+}
+
+// Example
+// .selector {
+//   @include prefix((
+//     column-count: 3,
+//     column-gap: 1.5em,
+//     column-rule: 2px solid hotpink
+//   ), webkit moz);
+// }
+// example
+// http://alistapart.com/article/using-css-mod-queries-with-range-selectors?utm_source=codropscollective
+//li {
+//	@include mod-list(3, 0){
+//		@include select-range(3, 5){
+//			// css for items 3 to 5 in a list mod 3 remainder = 0
+//		}
+//	}
+//}
+// styleguide:ignore:end
+
+//is
+
+
+@mixin cellBox {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@mixin innerImage{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right:0;
+    transform: translateY(-50%);
+    margin:0 auto;
+}
+@mixin resetImage {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: 0 auto;
+}
