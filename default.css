@@ -7,80 +7,56 @@
 /* ***************************************************************************** */
 /* ==================================================MEDIAQUERY GRAMMER============================================================== */
 @font-face {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-style: normal;
   font-weight: 100;
-  src: url("resources/fonts/NotoSansKR-Thin.eot");
-  /* IE9 Compat Modes */
-  src: url("resources/fonts/NotoSansKR-Thin.eot?#iefix") format("embedded-opentype");
-  /* IE6-IE8 */
-  src: local(â€»), url("resources/fonts/NotoSansKR-Thin.woff") format("woff");
-  /* Modern Browsers */
+  src: url("resources/fonts/NotoSansKR-Thin.eot"); /* IE9 Compat Modes */
+  src: url("resources/fonts/NotoSansKR-Thin.eot?#iefix") format("embedded-opentype"); /* IE6-IE8 */
+  src: local(â€»), url("resources/fonts/NotoSansKR-Thin.woff") format("woff"); /* Modern Browsers */
 }
-
 @font-face {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-style: normal;
   font-weight: 300;
-  src: url("resources/fonts/NotoSansKR-Light.eot");
-  /* IE9 Compat Modes */
-  src: url("resources/fonts/NotoSansKR-Light.eot?#iefix") format("embedded-opentype");
-  /* IE6-IE8 */
-  src: local(â€»), url("resources/fonts/NotoSansKR-Light.woff") format("woff");
-  /* Modern Browsers */
+  src: url("resources/fonts/NotoSansKR-Light.eot"); /* IE9 Compat Modes */
+  src: url("resources/fonts/NotoSansKR-Light.eot?#iefix") format("embedded-opentype"); /* IE6-IE8 */
+  src: local(â€»), url("resources/fonts/NotoSansKR-Light.woff") format("woff"); /* Modern Browsers */
 }
-
 @font-face {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-style: normal;
   font-weight: 350;
-  src: url("resources/fonts/NotoSans-DemiLight.eot");
-  /* IE9 Compat Modes */
-  src: url("resources/fonts/NotoSans-DemiLight.eot?#iefix") format("embedded-opentype");
-  /* IE6-IE8 */
-  src: local(â€»), url("resources/fonts/NotoSans-DemiLight.woff") format("woff");
-  /* Modern Browsers */
+  src: url("resources/fonts/NotoSans-DemiLight.eot"); /* IE9 Compat Modes */
+  src: url("resources/fonts/NotoSans-DemiLight.eot?#iefix") format("embedded-opentype"); /* IE6-IE8 */
+  src: local(â€»), url("resources/fonts/NotoSans-DemiLight.woff") format("woff"); /* Modern Browsers */
 }
-
 @font-face {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-style: normal;
   font-weight: 400;
-  src: url("resources/fonts/NotoSansKR-Regular.eot");
-  /* IE9 Compat Modes */
-  src: url("resources/fonts/NotoSansKR-Regular.eot?#iefix") format("embedded-opentype");
-  /* IE6-IE8 */
-  src: local(â€»), url("resources/fonts/NotoSansKR-Regular.woff") format("woff");
-  /* Modern Browsers */
+  src: url("resources/fonts/NotoSansKR-Regular.eot"); /* IE9 Compat Modes */
+  src: url("resources/fonts/NotoSansKR-Regular.eot?#iefix") format("embedded-opentype"); /* IE6-IE8 */
+  src: local(â€»), url("resources/fonts/NotoSansKR-Regular.woff") format("woff"); /* Modern Browsers */
 }
-
 @font-face {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-style: normal;
   font-weight: 500;
-  src: url("resources/fonts/NotoSansKR-Medium.eot");
-  /* IE9 Compat Modes */
-  src: url("resources/fonts/NotoSansKR-Medium.eot?#iefix") format("embedded-opentype");
-  /* IE6-IE8 */
-  src: local(â€»), url("resources/fonts/NotoSansKR-Medium.woff") format("woff");
-  /* Modern Browsers */
+  src: url("resources/fonts/NotoSansKR-Medium.eot"); /* IE9 Compat Modes */
+  src: url("resources/fonts/NotoSansKR-Medium.eot?#iefix") format("embedded-opentype"); /* IE6-IE8 */
+  src: local(â€»), url("resources/fonts/NotoSansKR-Medium.woff") format("woff"); /* Modern Browsers */
 }
-
 @font-face {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-style: normal;
   font-weight: 600;
-  src: url("resources/fonts/NotoSansKR-Bold.eot");
-  /* IE9 Compat Modes */
-  src: url("resources/fonts/NotoSansKR-Bold.eot?#iefix") format("embedded-opentype");
-  /* IE6-IE8 */
-  src: local(â€»), url("resources/fonts/NotoSansKR-Bold.woff") format("woff");
-  /* Modern Browsers */
+  src: url("resources/fonts/NotoSansKR-Bold.eot"); /* IE9 Compat Modes */
+  src: url("resources/fonts/NotoSansKR-Bold.eot?#iefix") format("embedded-opentype"); /* IE6-IE8 */
+  src: local(â€»), url("resources/fonts/NotoSansKR-Bold.woff") format("woff"); /* Modern Browsers */
 }
-
 body {
   font-weight: 400;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -100,8 +76,7 @@ menu, nav, output, ruby, section, summary, time, mark, audio, video {
   padding: 0;
   border: 0;
   vertical-align: baseline;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img, fieldset, form, label, legend, figure, figcaption, input, button {
@@ -148,7 +123,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
 }
 
 img {
@@ -175,16 +150,15 @@ table {
 
 button {
   cursor: pointer;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
 }
 
 textarea {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   resize: none;
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 14px;
   font-size: 1.4rem;
   font-weight: 300;
@@ -197,8 +171,7 @@ textarea {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -217,7 +190,6 @@ a {
   font-size: 0;
   line-height: 0;
 }
-
 .skip a:hover, .skip a:active, .skip a:focus {
   width: 100%;
   height: auto;
@@ -273,8 +245,8 @@ select::-ms-expand {
   display: none;
 }
 
-input[type="text"],
-input[type="tel"] {
+input[type=text],
+input[type=tel] {
   background: #fff;
 }
 
@@ -282,22 +254,18 @@ input[placeholder]::-webkit-input-placeholder,
 textarea[placeholder]::-webkit-input-placeholder {
   color: #666;
 }
-
 input[placeholder]:-moz-placeholder,
 textarea[placeholder]:-moz-placeholder {
   color: #666;
 }
-
 input[placeholder]::-moz-placeholder,
 textarea[placeholder]::-moz-placeholder {
   color: #666;
 }
-
 input[placeholder]:-ms-input-placeholder,
 textarea[placeholder]:-ms-input-placeholder {
   color: #666;
 }
-
 input[placeholder].placeholder,
 textarea[placeholder].placeholder {
   color: #666;
@@ -339,7 +307,6 @@ body {
 .skip {
   width: 100%;
 }
-
 .skip .skip a {
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
@@ -351,7 +318,6 @@ body {
   top: -35px;
   opacity: 0;
 }
-
 .skip .skip a:focus {
   opacity: 1;
 }
@@ -360,7 +326,6 @@ body {
   content: "";
   display: table;
 }
-
 .clear:after {
   clear: both;
 }
@@ -374,7 +339,6 @@ body {
   content: "";
   display: table;
 }
-
 .agreeParagraph:after {
   clear: both;
 }
@@ -431,10 +395,8 @@ body {
 
 /*focus styles*/
 .chk_wrapper input:focus + label::before {
-  -webkit-box-shadow: 0 0 0 2px #000;
-          box-shadow: 0 0 0 2px #000;
-  outline: 2px solid transparent;
-  /* For Windows high contrast mode. */
+  box-shadow: 0 0 0 2px #000;
+  outline: 2px solid transparent; /* For Windows high contrast mode. */
 }
 
 .radio_wrapper {
@@ -479,7 +441,6 @@ body {
   position: absolute;
   left: 5px;
   top: 7px;
-  -webkit-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -490,24 +451,19 @@ body {
 
 /*focus styles*/
 .radio_wrapper input:focus + label::before {
-  -webkit-box-shadow: 0 0 0 3px #ffbf47;
-          box-shadow: 0 0 0 3px #ffbf47;
-  outline: 3px solid transparent;
-  /* For Windows high contrast mode. */
+  box-shadow: 0 0 0 3px #ffbf47;
+  outline: 3px solid transparent; /* For Windows high contrast mode. */
 }
 
 /* Slider */
 .slick-slider {
   position: relative;
   display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
@@ -519,11 +475,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .slick-list:focus {
   outline: none;
 }
-
 .slick-list.dragging {
   cursor: pointer;
   cursor: hand;
@@ -531,7 +485,6 @@ body {
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
@@ -543,16 +496,13 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
 .slick-track:before, .slick-track:after {
   content: "";
   display: table;
 }
-
 .slick-track:after {
   clear: both;
 }
-
 .slick-loading .slick-track {
   visibility: hidden;
 }
@@ -563,31 +513,24 @@ body {
   min-height: 1px;
   display: none;
 }
-
-[dir="rtl"] .slick-slide {
+[dir=rtl] .slick-slide {
   float: right;
 }
-
 .slick-slide img {
   display: block;
 }
-
 .slick-slide.slick-loading img {
   display: none;
 }
-
 .slick-slide.dragging img {
   pointer-events: none;
 }
-
 .slick-initialized .slick-slide {
   display: block;
 }
-
 .slick-loading .slick-slide {
   visibility: hidden;
 }
-
 .slick-vertical .slick-slide {
   display: block;
   height: auto;
@@ -595,7 +538,7 @@ body {
 }
 
 .clearfix:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -614,7 +557,6 @@ body {
 #header {
   position: relative;
 }
-
 #header .header_wrap {
   position: fixed;
   top: 0;
@@ -622,17 +564,14 @@ body {
   padding-right: 100px;
   width: 100%;
   height: 70px;
-  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
   background-color: #fff;
   font-size: 1.1em;
   z-index: 900;
 }
-
 #header .header_wrap > * {
   float: left;
 }
-
 #header .header_wrap .nav-tit {
   position: absolute;
   top: 0;
@@ -641,20 +580,16 @@ body {
   line-height: 65px;
   color: #b344be;
 }
-
 #header .header_wrap #top_nav {
   float: right;
 }
-
 #header .header_wrap #top_nav li {
   float: left;
   color: #333;
 }
-
 #header .header_wrap #top_nav li:not(:last-child) {
   margin-right: 30px;
 }
-
 #header .header_wrap #top_nav li a {
   display: block;
   padding: 22px 0;
@@ -666,12 +601,10 @@ section {
   height: 100%;
   padding: 50px 0;
 }
-
 section h2 {
   font-size: 2.133em;
   letter-spacing: -0.03em;
   color: #111;
-  text-align: center;
   text-transform: uppercase;
   padding-bottom: 50px;
   font-weight: bold;
@@ -681,7 +614,6 @@ section h2 {
   float: left;
   width: 50%;
 }
-
 #about .aboutbox .Box h4 {
   position: relative;
   font-size: 2.133em;
@@ -689,58 +621,47 @@ section h2 {
   color: #926ab1;
   padding-bottom: 20px;
 }
-
 #about .aboutbox .Box .List li {
   position: relative;
   padding-left: 15px;
 }
-
 #about .aboutbox .Box .List li:after {
-  content: '-';
+  content: "-";
   position: absolute;
   left: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 #portfolio {
   background-color: #f5f0f6;
 }
-
 #portfolio .counter {
   padding-bottom: 20px;
 }
-
 #portfolio .counter p {
   font-size: 1em;
   color: #666;
 }
-
 #portfolio .counter p span {
   color: #8b4cbc;
   font-weight: bold;
 }
-
 #portfolio .pList {
   position: relative;
 }
-
 #portfolio .in {
   margin-left: -9px;
   position: relative;
 }
-
 #portfolio .in li {
   padding-bottom: 1px;
   background-color: #fff;
   border: 1px #dcdedc solid;
   position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0 9px;
 }
-
 #portfolio .in li .img {
   position: relative;
   display: block;
@@ -748,15 +669,12 @@ section h2 {
   height: 0;
   padding-bottom: 66%;
 }
-
 #portfolio .in li .img img {
   width: 100%;
   max-width: 100%;
   height: auto;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-
 #portfolio .in li .img .hover {
   position: absolute;
   left: 0;
@@ -767,12 +685,10 @@ section h2 {
   display: none;
   background: rgba(1, 1, 1, 0.8);
 }
-
 #portfolio .in li .cont {
   height: 100px;
   padding: 20px;
 }
-
 #portfolio .in li .cont p {
   margin-bottom: 5%;
   font-size: 15px;
@@ -780,7 +696,6 @@ section h2 {
   color: #4e4e4e;
   font-weight: 700;
 }
-
 #portfolio .in li .cont p .kr {
   margin-top: 10px;
   display: block;
@@ -788,31 +703,72 @@ section h2 {
   color: #888;
   font-weight: normal;
 }
-
 #portfolio .in li a:hover img {
-  -webkit-transform: scale(1.09);
-          transform: scale(1.09);
+  transform: scale(1.09);
 }
-
 #portfolio .arrows > * {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 23px;
   height: 37px;
   text-indent: -9999px;
   z-index: 1;
 }
-
 #portfolio .arrows .left_arrow {
   left: -70px;
   background: url("resources/images/cv_left.png");
 }
-
 #portfolio .arrows .right_arrow {
   right: -70px;
   background: url(resources/images/cv_right.png);
+}
+#portfolio .list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+#portfolio .list li {
+  width: calc(25% - 19px);
+  padding-bottom: 1px;
+  background-color: #fff;
+  border: 1px #dcdedc solid;
+  position: relative;
+  box-sizing: border-box;
+}
+#portfolio .list li a:hover img {
+  transform: scale(1.09);
+}
+#portfolio .list li .img {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 57%;
+}
+#portfolio .list li .img img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  transition: all 0.5s ease-in-out;
+}
+#portfolio .list li .cont {
+  height: 100px;
+  padding: 20px;
+}
+#portfolio .list li .cont p {
+  font-size: 15px;
+  line-height: 18px;
+  color: #4e4e4e;
+  font-weight: 700;
+}
+#portfolio .list li .cont p .kr {
+  margin-top: 10px;
+  display: block;
+  font-size: 13px;
+  color: #888;
+  font-weight: normal;
 }
 
 /*footer*/
@@ -824,4 +780,64 @@ section h2 {
   line-height: 20px;
   text-align: center;
 }
-/*# sourceMappingURL=default.css.map */
+
+/*tab*/
+.tab {
+  position: relative;
+}
+.tab .tab-menu {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #E6E6E6;
+}
+.tab .tab-menu li {
+  position: relative;
+  margin-bottom: -1px;
+  margin-right: -1px;
+  text-align: center;
+}
+.tab .tab-menu li:not(:last-child)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 1px;
+  height: 12px;
+  background: #E6E6E6;
+}
+.tab .tab-menu li.is-open a {
+  position: relative;
+  color: #926ab1;
+  font-weight: 500;
+  border-bottom: 2px solid #926ab1;
+}
+.tab .tab-menu li a {
+  display: block;
+  color: #666;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+}
+.tab .tab-cont-item {
+  display: none;
+}
+.tab .tab-cont-item.is-open {
+  display: block;
+}
+
+.numbering {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.numbering p {
+  font-size: 1em;
+  color: #666;
+}
+.numbering p span {
+  color: #8b4cbc;
+  font-weight: bold;
+}/*# sourceMappingURL=default.css.map */

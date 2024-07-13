@@ -138,10 +138,10 @@ body {
     line-height: 35px;
     top: -35px;
     opacity: 0;
-&:focus{
-    opacity: 1;
-}
-}
+        &:focus{
+            opacity: 1;
+        }
+    }
 }
 .clear {
     @include clearfix;
@@ -156,3 +156,7 @@ body {
 // 	wm : 640px,
 //  t:  768px,
 //  pc: 1200px
+
+
+
+
