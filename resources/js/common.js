@@ -75,5 +75,5 @@ function init() {
 }
 
 $(function() {
-  init();
+  init(); 
 });
