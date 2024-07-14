@@ -297,18 +297,43 @@ $mq-media-type: all !default;
 
 /* ==================================================MEDIAQUERY GRAMMER============================================================== */ 
 
-// @include mq($from: pc) {
-// 	.example {
-// 		width:80%;
-// 	}
-//    }
-//    @include mq($from: t) {
-// 	   .example {
-// 		   width:60%;
-// 	   }
-//    }
-//    @include mq($from: m) {
-// 	   .example {
-// 		   width:40%;
-// 	   }
-//    }
+@include mq($from: pc) {
+	.example {
+		width:80%;
+	}
+   }
+   @include mq($from: t) {
+	   .inner {
+			padding-left: 30px;
+			padding-right: 30px;
+	   }
+	   .title{
+			margin-bottom: 30px;
+	   }
+	   .aboutbox{
+			flex-direction: column;
+			.Box{
+				&:not(:last-child){
+					margin-bottom: 20px;
+				}
+			}
+	   }
+	   #portfolio{
+			.list{
+				gap: 30px;
+				li{
+					width: calc(50% - 15px)
+				}
+			}
+	   }
+	   .tab {
+			.tab-menu{
+				max-width: 768px;
+				overflow-y: hidden;
+				overflow-x: scroll;
+			}
+	   }
+   }
+   @include mq($from: m) {
+	  
+   }

@@ -9,39 +9,39 @@
         position: fixed;
         top: 0;
         left: 0;
-        padding-right: 100px;
         width: 100%;
         height: 70px;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
         background-color: #fff;
         font-size: 1.1em;
         z-index: 900;
-        >*{
-            float:left;
+        .inner{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
         }
         .nav-tit{
-            position: absolute;
-            top: 0;
-            left: 90px;
-            font-size: 1em;
-            line-height: 65px;
+            font-size: 1em; 
             color: #b344be;
         }
         #top_nav{
-            float: right;
-            li{
-                float:left;
-                color:#333;
-                &:not(:last-child){
-                    margin-right:30px;
-                }
-                a{
-                    display: block;
-                    padding:22px 0;
-                    color: #666;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                li{
+                    color:#333;
+                    &:not(:last-child){
+                        margin-right:20px;
+                    }
+                    a{
+                        display: block;
+                        color: #666;
+                    }
                 }
             }
-    
         }
     }
 }
@@ -55,17 +55,18 @@ section{
         letter-spacing: -0.03em;
         color: #111;
         text-transform: uppercase;
-        padding-bottom: 50px;
         font-weight: bold;
     }
 }
 #about{
     .aboutbox{
-        > *{
-            float:left;
-            width:50%;
-        }
+        display: flex;
+        flex-wrap: wrap;
         .Box{
+            flex: 1;
+            &:not(:last-child){
+                margin-right:25px;
+            }
             h4{
                 position: relative;
                 font-size: 2.133em;
@@ -252,6 +253,23 @@ section{
     text-align: center;
 }
 
+.title{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    .numbering{
+        p{
+            font-size: 1em;
+            color: #666;
+            span{
+                color: #8b4cbc;
+                font-weight: bold;
+            }
+        }
+    }
+}
 
 /*tab*/
 .tab{
@@ -304,16 +322,3 @@ section{
     }
 }
 
-.numbering{
-    position: absolute;
-    top:5px;
-    right:0;
-    p{
-        font-size: 1em;
-        color: #666;
-        span{
-            color: #8b4cbc;
-            font-weight: bold;
-        }
-    }
-}

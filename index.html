@@ -16,20 +16,24 @@
         <!--header-->
         <header id="header">
             <div class="header_wrap">
-                <div class="nav-tit">Kyeongjin's Portfolio</div>
-                <nav id="top_nav">
-                    <ul class="clearfix">
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#portfolio">PORTFOLIO</a></li>
-                        <li><a href="#footer">CONTACT</a></li>
-                    </ul>
-                </nav>
+                <div class="inner">
+                    <div class="nav-tit">Kyeongjin's Portfolio</div>
+                    <nav id="top_nav">
+                        <ul class="clearfix">
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#footer">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <!--//header-->
         <!--about-->
         <section id="about" class="inner">
-            <h2>About</h2>
+            <div class="title">
+                <h2>About</h2>
+            </div>
             <div class="aboutbox clearfix">
                 <div class="Box">
                     <h4>Profile</h4>
@@ -58,7 +62,12 @@
         <!--portfolio-->
         <section id="portfolio">
             <div class="inner">
-                <h2>portfolio</h2>
+                <div class="title">
+                    <h2>portfolio</h2>
+                    <div class="numbering">
+                        <p>전체 <span>32</span></p>
+                    </div> 
+                </div>
                 <div class="tab" data-ui="tab">
                     <ul class="tab-menu">
                         <li class="is-open">
@@ -525,9 +534,6 @@
                            </ul>
                         </div>
                     </div>
-                    <div class="numbering">
-                        <p>전체 <span>32</span></p>
-                    </div> 
                 </div>                                            
             </div>
         </section>
